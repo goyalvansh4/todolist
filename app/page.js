@@ -19,7 +19,7 @@ const page = () => {
        setMainTask(copyTask);
     }
       
-    let renderTask = <h2>No Task Available</h2>
+    let renderTask = <h2>No Tasks Available</h2>
 
     if(mainTask.length>0){
     renderTask = mainTask.map((t,i)=>{
@@ -39,7 +39,7 @@ const page = () => {
   return (
     <>
       <h1 className="bg-black text-white p-5 text-5xl font-bold text-center">
-        My TodoList
+        My Daily TodoList
       </h1>
       <form onSubmit={submitHandler} >
         <input
